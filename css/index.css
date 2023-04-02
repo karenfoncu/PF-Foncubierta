@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Kurale&family=Poppins:wght@300&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Kurale&family=Poppins:wght@300&family=Roboto&display=swap');
+
+
+*{
+    font-family:'Roboto', sans-serif,'Inter', sans-serif;
+    margin:0;
+    padding:0;
+   
+    
+}
+html{
+    height:100%;
+}
+nav{
+    background: rgb(0, 124, 128);
+    position:fixed!important;
+    top:0;
+    left:0;
+    width:100%;
+    display:flex;
+    color:white;
+    align-items:flex-end;
+    z-index:99;
+    
+}
+.titulo{
+    text-decoration:none;
+    color:white;
+    font-size:3em;
+    margin-top:58px;
+
+   
+}
+
+nav img{ 
+    display:flex;
+    width: 100px;
+    height: 100px;
+    padding:5px;
+   
+   
+}
+
+    nav ul{
+    list-style: none;
+    display:flex;
+    padding: 90px 5px 10px 250px;
+    font-size:1.2em; 
+        
+        }
+            nav ul li a{
+            text-decoration: none;
+            color:white;
+            margin-left:10px;
+         }
+            nav ul li a:hover{
+                color:black;
+                text-decoration: underline;
+            }
+.navbar-toggler{
+    background-color: white;
+}
+
+h1{
+    color:white;
+    text-align:center;
+    font-family: 'Inter', sans-serif;
+    font-size:40px;
+    background-color: rgb(0, 124, 128);
+  
+}
+h3{
+    color: white;
+    background-color: rgb(0, 124, 128);
+    text-align: center;
+}
+header{
+    padding:200px 20px 30px 20px;
+    
+    
+}
+
+
+    header img{
+      padding-bottom:50px;
+      width:80%;
+      height:auto;
+      
+    }
+   
+body{
+    background-color:rgb(212, 252, 252);
+    
+}
+
+main{
+    text-align:center;
+    display:flex;
+    flex-wrap:wrap;
+    
+}
+    main h1{
+        padding-top:230px;
+    }
+
+
+.destacadas{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left:20px;
+    padding-right:20px;
+}
+
+
+
+   
+
+    .destacadas figure{
+        width:30%;
+        border-radius: 2px;
+        border: solid grey;
+        height:auto;
+        margin-bottom:20px;
+    }
+
+        .destacadas figure img{
+            height: auto;
+            width:200px;
+            margin-top:15px;
+        }
+
+            .destacadas figure p{
+            font-size:1rem;
+            line-height: 1.2rem;
+            margin:20px 0;
+            text-align: center;
+
+            }
+
+                .destacadas figure figcaption{
+                    color:rgb(0, 124, 128);
+                    font-size:1.5rem;
+                    margin-top: 10px;
+                }
+
+                    .destacadas figure button{
+                        border:solid;
+                        background-color:rgb(0, 124, 128);
+                        color:white;
+                        border-radius: 8px;
+                        padding:10px;
+                        margin-bottom: 20px;
+                        width:150px;
+                        font-size: 1rem;
+                    }
+
+footer{
+    background-color:rgb(0, 124, 128);
+    height: 100px;
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+    }
+
+    footer section{
+        margin: 10px;
+        
+    }
+
+        footer section div{
+            margin-top:8px;
+        }
+
+            footer section div a img{
+                height:auto;
+                width:20px;
+            }
+
+                footer section div a{
+                    text-decoration: none;
+                    color:white;
+                    font-family: 'roboto';
+                }
+
+/*selector filtros*/
+
+.filtros{
+    display:flex;
+    justify-content:right;
+    padding:20px;
+    
+}
+
+    .filtros select{
+        background-color: rgb(0, 124, 128);
+        color:white;
+        font-size: 20px;
+        border:none;
+        font-family: 'roboto';
+    }
+
+
+/*contacto*/
+
+.main-contacto{
+    margin-top:30px;
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows:auto;
+    grid-template-areas:
+   
+    "mapa formulario"
+    "sueño sueño";
+    gap:5px;
+    }
+
+#mapa{
+    grid-area: mapa;
+    padding-left:40px;
+   
+}
+
+#formulario{
+    grid-area:formulario;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    align-items: center;
+    justify-content: left;
+}
+
+#sueño{
+    grid-area: sueño;
+   
+}
+
+#contacto{
+    margin-top:200px;
+
+}
+
+#imagen-contacto{
+    width:1400px;
+    height:auto;
+}
+
+
+@media screen and (max-width: 480px){
+   .titulo{
+    font-size: 2em;
+    margin-top:auto;
+   }
+    nav{
+    align-items: flex-end;
+    }
+
+   nav img{
+    width:80px;
+    height:80px;
+    
+   }
+
+   h1{
+    font-size: 28px;
+   }
+
+   .destacadas{
+    flex-direction: column;
+    
+   }
+   .destacadas figure{
+    width:100%;
+   }
+
+   footer{
+    flex-direction: column;
+    height:auto;
+    
+   }
+
+   nav ul{
+    flex-direction: column;
+    padding:0 5px 0 0;
+    font-size: 20px;
+   }
+}
+
+@media screen and (min-width:480px) and (max-width:768px){
+    
+    nav{
+        align-items: flex-end;
+        height:auto;
+    }
+   
+    nav ul{
+        flex-direction:column;
+        font-size: 25px;
+        padding: 5px 10px 0 0;
+    }
+
+    .destacadas{
+        display:grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto;
+}
+    .destacadas figure{
+        width:100%;
+    }
+
+}
