@@ -1,5 +1,7 @@
 <!doctype html>
 <html lang="en">
+
+  <!-- Comienza head -->
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
@@ -9,15 +11,19 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/index.css">
 
-    </head>
+  </head>
+  <!-- Finaliza head -->
+
+  <!-- Comienza body -->
   <body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+
+    <!-- Comienza nav -->
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-            <a href="index.html">
+            <a href="../index.html">
                 <img src="../imagenes/logo.jpeg" alt="Foncubierta Propiedades">
             </a>
-            <a href="index.html" class="titulo"> 
+            <a href="../index.html" class="titulo"> 
                 <div>Foncubierta Propiedades</div>
             </a>
           <button  class="navbar-toggler" type="button"  data-bs-toggle="collapse"  data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,18 +31,24 @@
           </button>
           <div class="collapse navbar-collapse"  id="navbarScroll">
             <ul class="nav-ul"   class="navbar-nav me-0 my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              
+              <!-- nav item -->
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="nosotros.html">Nosotros</a>
               </li>
+              <!-- nav item -->
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="venta.html">Venta</a>
               </li>
+              <!-- nav item -->
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="alquiler.html">Alquiler</a>
               </li>
+              <!-- nav item -->
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="tasaciones.html">Tasaciones</a>
               </li>
+              <!-- nav item -->
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
               </li>
@@ -46,81 +58,101 @@
           </div>
         </div>
       </nav>
+      <!-- finaliza nav -->
 
+    <!-- titulo contacto -->
     <section >
         <h1 id="contacto">Contacto</h1>
     </section>
     
+    <!-- comienza main -->
     <main class="main-contacto">
-        
-        
+      
+
         <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.6517693646224!2d-58.7093796!3d-34.5370496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbd13e321056f%3A0x19775e98f46a46af!2sConcejal%20Tribulato%20688%2C%20San%20Miguel%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1678129598341!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <form id="formulario" action="envio.php">
-            <div>
-                <label  for="name">Nombre y Apellido</label>
-                <input type="text" id="name">
-            </div>
-            <div>   
-                <label  for="tel">Teléfono de contacto</label>
-                <input type="tel" id="contacto">
-            </div> 
-            <div>
-                <label  for="email">E-mail</label>
-                <input type="email" id="email">
-            </div>
-            <div>
-                <label  for="mensaje">¿En qué podemos ayudarte?</label>
-                <br>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
-            </div>
-            <input  type="reset" value="Cancelar">
-            <input  type="submit" value="Enviar">
+        
+        <!-- comienza form -->
+        <form id="formulario">
+          <!-- form item -->
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Nombre y apellido</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+          <!-- form item -->
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">e-mail</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <!-- form item -->
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Teléfono de contacto</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <!-- form item -->
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Motivo de consulta</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          
+          <button id="boton-contacto" type="submit" class="btn btn-primary">Enviar</button>
         </form>
+        <!-- finaliza form -->
 
         <section id="sueño">
             <img id="imagen-contacto" src="../imagenes/contacto.jpeg">
         </section>
     </main>
-  </body>
-  <footer>
-    <section>
-        <div>
-        <a href="https://www.facebook.com/profile.php?id=100034534135941" target="_blank">
-            <img src="../imagenes/icono-facebook.png" alt="Seguinos en Facebook">
-        Seguinos en Facebook</a>
-        </div>
-        <div>
-        <a href="https://instagram.com/foncubiertapropiedades?igshid=YmMyMTA2M2Y=" target="_blank">
-            <img src="../imagenes/icono-instagram.png" alt="Seguinos en Instagram">
-        Seguinos en Instagram</a>
-        </div>
-        </section>
+     <!--finaliza main -->
+     
+     
+     <!-- comienza footer -->
+    <footer>
 
-        <section>
-        <div>
-        <a href="https://wa.me/+54541157640176?text=Buenas%20tardes,%20estoy%20interesado%20en%20una%20propiedad...
-        " target="_blank">
-            <img src="../imagenes/icono-whatsapp.png" alt="Contactanos a través de Whatsapp">
-        Contactanos al 1157640176</a>  
-        </div>
-        <div> 
-        <a href="lucasfoncubierta@gmail.com" target="_blank">
-            <img src="../imagenes/icono-email.png" alt="Contactanos a través de icono-email">
-        lucasfoncubierta@gmail.com</a>
-        </div>
-        </section>
+      <!-- footer section -->
+      <section>
+          <div>
+          <a href="https://www.facebook.com/profile.php?id=100034534135941" target="_blank">
+              <img src="../imagenes/icono-facebook.png" alt="Seguinos en Facebook">
+          Seguinos en Facebook</a>
+          </div>
+          <div>
+          <a href="https://instagram.com/foncubiertapropiedades?igshid=YmMyMTA2M2Y=" target="_blank">
+              <img src="../imagenes/icono-instagram.png" alt="Seguinos en Instagram">
+          Seguinos en Instagram</a>
+          </div>
+      </section>
 
-        <section>
-        <div>
-        <a href="https://goo.gl/maps/buwb5jtGykc8dST58" target="_blank">
-            <img src="../imagenes/ubicacion.png" alt="nuestra ubicacion">
-        Tribulato 688, San Miguel.</a>  
-        </div>
-        <div> 
-        <a href="https://goo.gl/maps/RuEJKxPAAnUEysJc7" target="_blank">
-            <img src="../imagenes/ubicacion.png" alt="nuestra ubicacion">
-        Av Pte. J. D. Perón 870</a>
-        </div>
-    </section>       
-</footer>
+      <!-- footer section -->
+      <section>
+          <div>
+          <a href="https://wa.me/+54541157640176?text=Buenas%20tardes,%20estoy%20interesado%20en%20una%20propiedad...
+          " target="_blank">
+              <img src="../imagenes/icono-whatsapp.png" alt="Contactanos a través de Whatsapp">
+          Contactanos al 1157640176</a>  
+          </div>
+          <div> 
+          <a href="lucasfoncubierta@gmail.com" target="_blank">
+              <img src="../imagenes/icono-email.png" alt="Contactanos a través de icono-email">
+          lucasfoncubierta@gmail.com</a>
+          </div>
+      </section>
+
+      <!-- footer section -->
+      <section>
+          <div>
+          <a href="https://goo.gl/maps/buwb5jtGykc8dST58" target="_blank">
+              <img src="../imagenes/ubicacion.png" alt="nuestra ubicacion">
+          Tribulato 688, San Miguel.</a>  
+          </div>
+          <div> 
+          <a href="https://goo.gl/maps/RuEJKxPAAnUEysJc7" target="_blank">
+              <img src="../imagenes/ubicacion.png" alt="nuestra ubicacion">
+          Av Pte. J. D. Perón 870</a>
+          </div>
+      </section>       
+  </footer>
+  <!-- finaliza footer -->
+
+</body>
+<!-- finaliza body -->
 </html>

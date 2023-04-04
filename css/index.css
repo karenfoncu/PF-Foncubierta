@@ -12,23 +12,25 @@
 html{
     height:100%;
 }
+
+/*inicia nav*/
+
 nav{
     background: rgb(0, 124, 128);
     position:fixed!important;
     top:0;
     left:0;
     width:100%;
-    display:flex;
     color:white;
-    align-items:flex-end;
     z-index:99;
+
     
 }
 .titulo{
     text-decoration:none;
     color:white;
     font-size:3em;
-    margin-top:58px;
+    margin-top: 60px;  
 
    
 }
@@ -37,7 +39,7 @@ nav img{
     display:flex;
     width: 100px;
     height: 100px;
-    padding:5px;
+    margin-bottom:5px;
    
    
 }
@@ -62,19 +64,9 @@ nav img{
     background-color: white;
 }
 
-h1{
-    color:white;
-    text-align:center;
-    font-family: 'Inter', sans-serif;
-    font-size:40px;
-    background-color: rgb(0, 124, 128);
-  
-}
-h3{
-    color: white;
-    background-color: rgb(0, 124, 128);
-    text-align: center;
-}
+/*inicia header, carrousel*/
+
+
 header{
     padding:200px 20px 30px 20px;
     
@@ -88,6 +80,8 @@ header{
       height:auto;
       
     }
+
+/*body y main*/
    
 body{
     background-color:rgb(212, 252, 252);
@@ -98,12 +92,9 @@ main{
     text-align:center;
     display:flex;
     flex-wrap:wrap;
-    
 }
-    main h1{
-        padding-top:230px;
-    }
 
+/*propiedades destacadas en figures*/
 
 .destacadas{
     display:flex;
@@ -112,11 +103,20 @@ main{
     justify-content: space-between;
     padding-left:20px;
     padding-right:20px;
-}
+    }
 
 
 
-   
+    .propiedades-destacadas{
+        color:white;
+        text-align:center;
+        font-family: 'Inter', sans-serif;
+        font-size:40px;
+        background-color: rgb(0, 124, 128);
+        width:100%;
+        margin-bottom:50px;
+      
+    }
 
     .destacadas figure{
         width:30%;
@@ -127,7 +127,7 @@ main{
     }
 
         .destacadas figure img{
-            height: auto;
+            height: 180px;
             width:200px;
             margin-top:15px;
         }
@@ -135,8 +135,9 @@ main{
             .destacadas figure p{
             font-size:1rem;
             line-height: 1.2rem;
-            margin:20px 0;
+            margin:20px;
             text-align: center;
+            height:12em;
 
             }
 
@@ -144,6 +145,7 @@ main{
                     color:rgb(0, 124, 128);
                     font-size:1.5rem;
                     margin-top: 10px;
+                    
                 }
 
                     .destacadas figure button{
@@ -153,9 +155,16 @@ main{
                         border-radius: 8px;
                         padding:10px;
                         margin-bottom: 20px;
+                        margin-top:20px;
                         width:150px;
+                        height: 60px;
                         font-size: 1rem;
                     }
+
+
+
+/*footer*/
+
 
 footer{
     background-color:rgb(0, 124, 128);
@@ -225,22 +234,37 @@ footer{
 
 #formulario{
     grid-area:formulario;
-    display: flex;
-    flex-direction: column;
     font-size: 20px;
-    align-items: center;
-    justify-content: left;
+    margin-right: 10px;
 }
+
+#boton-contacto{
+    background-color: rgb(0, 124, 128);
+    color:white;
+}
+
+/*contacto - imagen inferior*/
 
 #sueño{
     grid-area: sueño;
+    padding-top:30px;
+    padding-bottom: 30px;
+    width:100%;
    
 }
 
+/*contacto - titulo (section)*/
+
 #contacto{
-    margin-top:200px;
+    margin-top:250px;
+    color:white;
+    background-color: rgb(0, 124, 128);
+    text-align: center;
+  
 
 }
+
+/*contacto - imagen inferior (img)*/
 
 #imagen-contacto{
     width:1400px;
@@ -248,13 +272,23 @@ footer{
 }
 
 
+/*responsive hasta 480px*/
+
 @media screen and (max-width: 480px){
-   .titulo{
-    font-size: 2em;
-    margin-top:auto;
+   
+   
+ /*nav*/  
+
+    .titulo{
+    font-size: 1.8em;
+    margin-top:0;
+    margin-left:5px;
+    
    }
     nav{
     align-items: flex-end;
+    position:absolute !important;
+    flex-wrap: nowrap!important;
     }
 
    nav img{
@@ -263,9 +297,26 @@ footer{
     
    }
 
-   h1{
-    font-size: 28px;
+   nav ul{
+    flex-direction: column;
+    padding:0 5px 0 0;
+    font-size: 20px;
    }
+
+
+/*header*/
+    header{
+        display:none;
+    }
+
+    
+/*index - propiedades destacadas*/  
+    
+    .propiedades-destacadas{
+        margin-top: 150px;
+        font-size:30px;
+    }
+
 
    .destacadas{
     flex-direction: column;
@@ -273,26 +324,83 @@ footer{
    }
    .destacadas figure{
     width:100%;
-   }
-
-   footer{
-    flex-direction: column;
     height:auto;
-    
    }
 
-   nav ul{
-    flex-direction: column;
-    padding:0 5px 0 0;
-    font-size: 20px;
+   .destacadas figure p{
+    height: 180px;
    }
+   
+   .destacadas figure button{
+    margin-top:10px;
 }
 
+/*footer*/
+
+    footer{
+        flex-direction:column;
+        height:auto;
+        }
+
+
+/*contacto*/
+
+        #contacto{
+            margin-top:140px;
+        }
+        
+        .main-contacto{
+            display:grid;
+            grid-template-columns: 100%;
+            grid-template-rows: auto;
+            grid-template-areas:
+   
+            "mapa"
+            "formulario"
+            "sueño";
+            justify-content: center;
+        }
+
+        #mapa{
+            width:100%;
+            padding:10px 10px 10px 10px;
+        }
+
+
+        #sueño{
+            display:none;
+        }
+
+        #formulario{
+            width:100%!important;
+            margin-top:20px;
+            margin-bottom:20px;
+        }
+
+
+    }
+
+
+   
+
+   
+/*responsive desde 480px hasta 768px*/
+
+
 @media screen and (min-width:480px) and (max-width:768px){
-    
+
+/*nav*/
+
+.titulo{
+    margin-top:0;
+    margin-left:5px;
+    font-size: 2.5em;
+}
+
     nav{
         align-items: flex-end;
-        height:auto;
+        position:absolute !important;
+        flex-wrap: nowrap!important;
     }
    
     nav ul{
@@ -301,13 +409,60 @@ footer{
         padding: 5px 10px 0 0;
     }
 
+
+/*index - propiedades destacadas*/
+        
     .destacadas{
         display:grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: auto;
-}
+        grid-template-columns:50% 50%;
+        grid-template-rows:auto;
+    }
+
     .destacadas figure{
         width:100%;
+        height:auto;
+        
     }
+
+    .destacadas figure button{
+        margin-top:32px;
+    }
+
+/*contacto*/
+
+    #contacto{
+        margin-top:200px;
+    }
+
+    .main-contacto{
+        display:grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        grid-template-areas:
+
+        "mapa"
+        "formulario"
+        "sueño";
+        justify-content: center;
+    }
+
+    #mapa{
+        width:100%;
+        padding:10px 10px 10px 10px;
+    }
+
+
+    #sueño{
+        display:none;
+    }
+
+    #formulario{
+        width:100%!important;
+        margin-top:20px;
+        margin-bottom:20px;
+    }
+
+
+
 
 }

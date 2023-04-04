@@ -1,5 +1,7 @@
 <!doctype html>
 <html lang="en">
+
+  <!-- Comienza head -->
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
@@ -9,15 +11,19 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/index.css">
 
-    </head>
+  </head>
+  <!-- Finaliza head -->
+
+  <!-- Comienza body -->
   <body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+
+    <!-- Comienza nav -->
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <a href="index.html">
                 <img src="../imagenes/logo.jpeg" alt="Foncubierta Propiedades">
             </a>
-            <a href="index.html" class="titulo"> 
+            <a href="../index.html" class="titulo"> 
                 <div>Foncubierta Propiedades</div>
             </a>
           <button  class="navbar-toggler" type="button"  data-bs-toggle="collapse"  data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,18 +31,24 @@
           </button>
           <div class="collapse navbar-collapse"  id="navbarScroll">
             <ul class="nav-ul"   class="navbar-nav me-0 my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              
+              <!-- nav item -->
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="nosotros.html">Nosotros</a>
               </li>
+              <!-- nav item -->
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="venta.html">Venta</a>
               </li>
+              <!-- nav item -->
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="alquiler.html">Alquiler</a>
               </li>
+              <!-- nav item -->
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="tasaciones.html">Tasaciones</a>
               </li>
+              <!-- nav item -->
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
               </li>
@@ -46,20 +58,183 @@
           </div>
         </div>
       </nav>
-    <header>
-        <img src="../imagenes/casa1.jpg" alt="">
-    </header>
+      <!-- finaliza nav -->
+
+      <!-- comienza header -->
+      <header>
+
+        <!-- comienza carrousel -->
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../imagenes/carrusel7.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../imagenes/carrusel8.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../imagenes/carrusel9.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <!-- finaliza carrousel -->
+
+      </header>     
+      <!-- comienza header -->
+
+    <!-- comienza main -->
     <main>
-        <h1>Propiedades en venta</h1>
-        
+      <h1 class="propiedades-destacadas" class="alquiler">Propiedades en venta</h1>
+
+      <!-- comienza filtros de busqueda -->
+      <section class="filtros">
+        <div>
+            <form>
+                <select name="Filtros">
+                    <option class="filtros-select">Filtros</option>
+                    <option class="Precio-bajo">Precio más bajo</option>
+                    <option class="Precio-alto">Precio más alto</option>
+                    <option class="mas-ambientes">Ambientes ascendente</option>
+                    <option class="menos-ambientes">Ambientes descendente</option>
+                </select>
+            </form>
+        </div>
+      </section>
+      <!-- finaliza filtros de busqueda -->
+
+        <!-- inician figures -->
+        <section class="destacadas">
+            <figure>
+                <img src="../imagenes/tucuman2900.jpg" alt="#">
+                <figcaption>Casa en venta</figcaption>
+                <p>Casa de una planta de 300 mts
+                  Entrada a living/ comedor con piso de baldosa colorada y calefaccion por tiro balanceado + aire acondicionado
+                  Cocina con desayunador, bajo mesada de madera, muy luminosa con salida a la galería
+                  Pasillo de distribucion a dormitorios
+                  2 dormitorios con placard y calefaccion por tiro balanceado.</p>
+                <button>Ver más</button>
+            </figure>
+            <figure>
+                <img src="../imagenes/primera480.jpg" alt="#">
+                <figcaption>Depto 3 ambientes</figcaption>
+                <p>Inmueble ubicado sobre la calle primera junta y malnatti, área comercial (mucho caudal de paso de personas) con renta asegurada!!
+                  Compuesta por 3 locales comerciales más dos departamentos.
+                  Dos departamentos, uno de 2 ambientes y otro de 3 ambientes en PH, con patio interno espacio en común.</p>
+                <button>Ver más</button>
+            </figure>
+            <figure>
+                <img src="../imagenes/sanmartin1000.jpg" alt="#">
+                <figcaption>Depto 3 ambientes</figcaption>
+                <p>Se vende casa de 3 ambientes con gran lote son excelente ubicación y orientación.
+
+
+                  SUPERFICIE TERRENO: 820 Mts2. (10x82)
+                  SUPERFICIE CUBIERTA: 100 Mts2 aproximadamente.</p>
+                <button>Ver más</button>
+            </figure>
+            <figure>
+                <img src="../imagenes/colorado2600.jpg" alt="#">
+                <figcaption>Casa en venta</figcaption>
+                <p>Casa 3 AMBIENTES en Bella Vista, San Miguel
+
+                  Casa de 3 ambientes en Bella Vista, La misma se encuentra a 2 cuadras de Av Gaspar Campos. a menos de 5 minutos del Buen Ayre, excelentes accesos.
+                  
+                  Cuenta con Living comedor, cocina con comedor diario, dos dormitorios de buenas dimensiones y baño completo
+                  </p>
+                <button>Ver más</button>
+            </figure>
+            <figure>
+                <img src="../imagenes/munzon100.jpg" alt="#">
+                <figcaption>Casa en venta</figcaption>
+                <p>Muy linda casa de una planta con techo de losa, sobre lote de 467 mts²
+                  Hall de distribucion
+                  Living comedor con salida al jardin
+                  pisos porcelanato simil madera
+                  Cocina integrada con isla, mesada en silestone
+                  Lavadero con salida a jardin
+                  aberturas en aluminio
+                  Toilette</p>
+                <button>Ver más</button>
+            </figure>
+            <figure>
+                <img src="../imagenes/pampa400.jpg" alt="#">
+                <figcaption>Emprendimiento</figcaption>
+                <p>Emprendimiento ParkCid
+                  Antezana al 576
+                  Venta de departamentos en pozo - Arquitectura innovadora
+                  Unidades de1 y 2 ambientes
+                  Amenities de primer nivel
+                  En el corazón de la ciudad, a solo 100 metros del Monumento al Cid Campeador.</p>
+                <button>Ver más</button>
+            </figure>
+        </section>
+         <!-- finalizan figures -->
     </main>
+     <!-- finaliza main -->
+        
+
+
+    <!-- comienza footer -->
     <footer>
-        <a href="https://www.facebook.com/profile.php?id=100034534135941" target="_blank">
-            <img src="../imagenes/icono-facebook.png" alt="Seguinos en Facebook">
-        </a>
-        <a href="https://instagram.com/foncubiertapropiedades?igshid=YmMyMTA2M2Y=" target="_blank">
-            <img src="../imagenes/icono-instagram.png" alt="Seguinos en Instagram">
-        </a>
-    </footer>
-  </body>
+
+      <!-- footer section -->
+      <section>
+          <div>
+          <a href="https://www.facebook.com/profile.php?id=100034534135941" target="_blank">
+              <img src="../imagenes/icono-facebook.png" alt="Seguinos en Facebook">
+          Seguinos en Facebook</a>
+          </div>
+          <div>
+          <a href="https://instagram.com/foncubiertapropiedades?igshid=YmMyMTA2M2Y=" target="_blank">
+              <img src="../imagenes/icono-instagram.png" alt="Seguinos en Instagram">
+          Seguinos en Instagram</a>
+          </div>
+      </section>
+
+      <!-- footer section -->
+      <section>
+          <div>
+          <a href="https://wa.me/+54541157640176?text=Buenas%20tardes,%20estoy%20interesado%20en%20una%20propiedad...
+          " target="_blank">
+              <img src="../imagenes/icono-whatsapp.png" alt="Contactanos a través de Whatsapp">
+          Contactanos al 1157640176</a>  
+          </div>
+          <div> 
+          <a href="lucasfoncubierta@gmail.com" target="_blank">
+              <img src="../imagenes/icono-email.png" alt="Contactanos a través de icono-email">
+          lucasfoncubierta@gmail.com</a>
+          </div>
+      </section>
+
+      <!-- footer section -->
+      <section>
+          <div>
+          <a href="https://goo.gl/maps/buwb5jtGykc8dST58" target="_blank">
+              <img src="../imagenes/ubicacion.png" alt="nuestra ubicacion">
+          Tribulato 688, San Miguel.</a>  
+          </div>
+          <div> 
+          <a href="https://goo.gl/maps/RuEJKxPAAnUEysJc7" target="_blank">
+              <img src="../imagenes/ubicacion.png" alt="nuestra ubicacion">
+          Av Pte. J. D. Perón 870</a>
+          </div>
+      </section>       
+  </footer>
+  <!-- finaliza footer -->
+
+</body>
+<!-- finaliza body -->
 </html>
