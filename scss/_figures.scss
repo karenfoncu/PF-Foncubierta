@@ -1,0 +1,56 @@
+.propiedades-destacadas{
+        color:$secondaryColor;
+        text-align:center;
+        font-family: $myfont;
+        font-size:$textLg;
+        background-color: $primaryColor;
+        width:100%;
+        margin-bottom:50px;    
+}
+
+.destacadas{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left:20px;
+    padding-right:20px;
+    figure{
+        width:30%;
+        border-radius: 2px;
+        border: solid $thirdColor;
+        height:auto;
+        margin-bottom:20px;
+        img{
+            height: 180px;
+            width:200px;
+            margin-top:15px;
+        }
+        p{
+            font-size:$textSm;
+            line-height: 1.2rem;
+            margin:20px;
+            text-align: center;
+            height:12em;
+
+            }
+        figcaption{
+            color:$primaryColor;
+            font-size:$textMs;
+            margin-top: 10px;
+            }
+        button{
+            border:solid;
+            background-color:$primaryColor;
+            color:$secondaryColor;
+            border-radius: 8px;
+            padding:10px;
+            margin-bottom: 20px;
+            margin-top:20px;
+            width:150px;
+            height: 60px;
+            font-size: $textSm;
+            }
+    }
+}
+

@@ -1,0 +1,37 @@
+/*titulo- h1 de tasaciones*/
+
+#tasaciones{
+    margin-top:250px;
+    margin-bottom:80px;
+    color:$secondaryColor;
+    background-color: $primaryColor;
+    text-align: center;
+}
+
+.main-tasaciones{
+    display:flex;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom:30px;
+    .imagen-tasaciones{
+        width:600px;
+        height:auto;
+        margin-bottom: 10px;
+    }
+    #formulario-tasaciones{
+        width:50%;
+        font-size: $text12;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

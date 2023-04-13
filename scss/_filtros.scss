@@ -1,0 +1,16 @@
+/*selector filtros*/
+
+.filtros{
+    display:flex;
+    justify-content:right;
+    padding:20px;
+    select{
+        background-color: $primaryColor;
+        color:$secondaryColor;
+        font-size: $textSm;
+        border:none;
+        font-family: 'roboto';
+    }
+    
+}
+

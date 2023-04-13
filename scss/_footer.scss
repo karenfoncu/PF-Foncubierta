@@ -1,0 +1,27 @@
+footer{
+    background-color:$primaryColor;
+    height: 100px;
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+    section{
+        margin: 10px;
+        div{
+            margin-top:8px;
+            
+            a{
+                text-decoration: none;
+                color:$secondaryColor;
+                font-family: 'roboto';
+                font-size: $textSm;
+                img{
+                    height:auto;
+                    width:20px;
+                }
+            }
+            
+            }
+        }
+}
+
+
