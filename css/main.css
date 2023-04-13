@@ -1,8 +1,42 @@
 @charset "UTF-8";
 @import 'https://fonts.googleapis.com/css2?family=Kurale&family=Poppins:wght@300&family=Roboto&display=swap';
 @import 'https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Kurale&family=Poppins:wght@300&family=Roboto&display=swap';
+.boton-alquiler, .button-venta {
+  border: solid;
+  background-color: rgb(0, 124, 128);
+  color: white;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  width: 150px;
+  height: 60px;
+  font-size: 1em;
+}
+
+.button-venta {
+  background-color: white;
+  color: rgb(0, 124, 128);
+}
+
+#formulario {
+  font-size: 1.2em;
+  color: rgb(0, 124, 128);
+  line-height: 2.5em;
+}
+
+#formulario-tasaciones {
+  font-size: 1.2em;
+  color: white;
+  line-height: 1.5em;
+}
+#formulario-tasaciones #boton-tasaciones {
+  background-color: rgb(0, 124, 128);
+  border: solid;
+}
+
 body {
-  background-color: rgb(212, 252, 252);
+  background-color: white;
 }
 body nav {
   background: rgb(0, 124, 128);
@@ -31,7 +65,7 @@ body nav ul li a {
   margin-left: 10px;
 }
 body nav ul li a:hover {
-  color: black;
+  color: rgb(149, 168, 161);
   text-decoration: underline;
 }
 body main {
@@ -82,7 +116,7 @@ header img {
 .destacadas figure {
   width: 30%;
   border-radius: 2px;
-  border: solid grey;
+  border: solid rgb(0, 124, 128);
   height: auto;
   margin-bottom: 20px;
 }
@@ -97,23 +131,12 @@ header img {
   margin: 20px;
   text-align: center;
   height: 12em;
+  color: rgb(0, 124, 128);
 }
 .destacadas figure figcaption {
   color: rgb(0, 124, 128);
   font-size: 1.5em;
   margin-top: 10px;
-}
-.destacadas figure button {
-  border: solid;
-  background-color: rgb(0, 124, 128);
-  color: white;
-  border-radius: 8px;
-  padding: 10px;
-  margin-bottom: 20px;
-  margin-top: 20px;
-  width: 150px;
-  height: 60px;
-  font-size: 1em;
 }
 
 footer {
@@ -178,7 +201,6 @@ footer section div a img {
 }
 .main-contacto #formulario {
   grid-area: formulario;
-  font-size: 1em;
   margin-right: 40px;
 }
 .main-contacto #formulario #boton-contacto {
@@ -238,7 +260,6 @@ footer section div a img {
 }
 .main-tasaciones #formulario-tasaciones {
   width: 50%;
-  font-size: 1.2em;
 }
 
 /*responsive hasta 480px*/

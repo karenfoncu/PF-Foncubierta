@@ -5,8 +5,8 @@
     justify-content:right;
     padding:20px;
     select{
-        background-color: $primaryColor;
-        color:$secondaryColor;
+        background-color: map-get($map: $paleta, $key:uno);
+        color:map-get($map: $paleta, $key:dos);
         font-size: $textSm;
         border:none;
         font-family: 'roboto';

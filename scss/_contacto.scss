@@ -2,8 +2,8 @@
 
 #contacto{
     margin-top:250px;
-    color:$secondaryColor;
-    background-color: $primaryColor;
+    color:map-get($map: $paleta, $key:dos);
+    background-color:map-get($map: $paleta, $key:uno);
     text-align: center;
     
 
@@ -28,11 +28,10 @@
     }
     #formulario{
         grid-area:formulario;
-        font-size: $textSm;
         margin-right:40px;
         #boton-contacto{
-            background-color: $primaryColor;
-            color:$secondaryColor;
+            background-color: map-get($map: $paleta, $key:uno);
+            color:map-get($map: $paleta, $key:dos);
         }
     }
 }

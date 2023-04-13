@@ -1,5 +1,5 @@
 footer{
-    background-color:$primaryColor;
+    background-color:map-get($map: $paleta, $key:uno);
     height: 100px;
     display:flex;
     justify-content: space-around;
@@ -11,7 +11,7 @@ footer{
             
             a{
                 text-decoration: none;
-                color:$secondaryColor;
+                color:map-get($map: $paleta, $key:dos);
                 font-family: 'roboto';
                 font-size: $textSm;
                 img{

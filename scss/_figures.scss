@@ -1,9 +1,9 @@
 .propiedades-destacadas{
-        color:$secondaryColor;
+        color:map-get($map: $paleta, $key:dos);;
         text-align:center;
         font-family: $myfont;
         font-size:$textLg;
-        background-color: $primaryColor;
+        background-color: map-get($map: $paleta, $key:uno);;
         width:100%;
         margin-bottom:50px;    
 }
@@ -18,7 +18,7 @@
     figure{
         width:30%;
         border-radius: 2px;
-        border: solid $thirdColor;
+        border: solid map-get($map: $paleta, $key:uno);
         height:auto;
         margin-bottom:20px;
         img{
@@ -32,25 +32,14 @@
             margin:20px;
             text-align: center;
             height:12em;
+            color:map-get($map: $paleta, $key:uno);
+
 
             }
         figcaption{
-            color:$primaryColor;
+            color:map-get($map: $paleta, $key:uno);
             font-size:$textMs;
             margin-top: 10px;
             }
-        button{
-            border:solid;
-            background-color:$primaryColor;
-            color:$secondaryColor;
-            border-radius: 8px;
-            padding:10px;
-            margin-bottom: 20px;
-            margin-top:20px;
-            width:150px;
-            height: 60px;
-            font-size: $textSm;
-            }
     }
 }
-
