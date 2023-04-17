@@ -1,0 +1,41 @@
+.body-error{
+    background-color: map-get($map: $paleta, $key:cuatro);
+    .navegador-error{
+        background-color: map-get($map: $paleta, $key:cuatro);
+    }
+    
+    main{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 50% 50%;
+
+        .error1{
+            width:80%;
+            height:auto;
+            margin-top: 12em;
+            margin-bottom: 2em;
+            }
+        .error2{
+            width:70%;
+            height:auto;
+            margin-top: 12em            
+        }
+        
+        
+    }
+    .error-button{
+        background-color:  map-get($map: $paleta, $key:cuatro);
+        color:  map-get($map: $paleta, $key:dos);
+        margin-top:2em;
+        margin-bottom: 12em;
+        text-align: center;
+        text-decoration:underline;
+        font-size: $text13;
+
+    
+        
+    }
+    .footererror{
+        background-color: map-get($map: $paleta, $key:cuatro);
+    }
+}

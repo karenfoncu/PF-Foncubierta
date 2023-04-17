@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @import 'https://fonts.googleapis.com/css2?family=Kurale&family=Poppins:wght@300&family=Roboto&display=swap';
 @import 'https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Kurale&family=Poppins:wght@300&family=Roboto&display=swap';
-.boton-alquiler, .button-venta {
+.boton-alquiler, body main section figure button, .button-venta {
   border: solid;
   background-color: rgb(0, 124, 128);
   color: white;
@@ -14,8 +14,23 @@
   font-size: 1em;
 }
 
+.boton-alquiler:hover, body main section figure button:hover, .button-venta:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
 .button-venta {
   background-color: white;
+  color: rgb(0, 124, 128);
+}
+
+.button-venta:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+body main section figure button {
+  background-color: rgb(212, 252, 252);
   color: rgb(0, 124, 128);
 }
 
@@ -27,14 +42,36 @@
 
 #formulario-tasaciones {
   font-size: 1.2em;
-  color: white;
+  color: rgb(70, 70, 70);
   line-height: 1.5em;
 }
 #formulario-tasaciones #boton-tasaciones {
   background-color: rgb(0, 124, 128);
   border: solid;
 }
+#formulario-tasaciones #boton-tasaciones:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
 
+@keyframes animateDiv {
+  0% {
+    width: 10%;
+  }
+  25% {
+    width: 30%;
+  }
+  50% {
+    width: 50%;
+    background-color: rgb(0, 124, 128);
+  }
+  75% {
+    width: 70%;
+  }
+  100% {
+    width: 100%;
+  }
+}
 body {
   background-color: white;
 }
@@ -48,6 +85,9 @@ body nav {
   z-index: 99;
 }
 body nav img {
+  animation-name: animateDiv;
+  animation-duration: 500ms;
+  animation-iteration-count: 1;
   display: flex;
   width: 100px;
   height: 100px;
@@ -65,6 +105,8 @@ body nav ul li a {
   margin-left: 10px;
 }
 body nav ul li a:hover {
+  cursor: pointer;
+  transform: scale(1.1);
   color: rgb(149, 168, 161);
   text-decoration: underline;
 }
@@ -124,6 +166,10 @@ header img {
   height: 180px;
   width: 200px;
   margin-top: 15px;
+}
+.destacadas figure img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }
 .destacadas figure p {
   font-size: 1em;
@@ -207,6 +253,10 @@ footer section div a img {
   background-color: rgb(0, 124, 128);
   color: white;
 }
+.main-contacto #formulario #boton-contacto:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
 
 /*contacto - imagen inferior*/
 #sueño {
@@ -262,10 +312,46 @@ footer section div a img {
   width: 50%;
 }
 
+.body-error {
+  background-color: black;
+}
+.body-error .navegador-error {
+  background-color: black;
+}
+.body-error main {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 50% 50%;
+}
+.body-error main .error1 {
+  width: 80%;
+  height: auto;
+  margin-top: 12em;
+  margin-bottom: 2em;
+}
+.body-error main .error2 {
+  width: 70%;
+  height: auto;
+  margin-top: 12em;
+}
+.body-error .error-button {
+  background-color: black;
+  color: white;
+  margin-top: 2em;
+  margin-bottom: 12em;
+  text-align: center;
+  text-decoration: underline;
+  font-size: 1.3em;
+}
+.body-error .footererror {
+  background-color: black;
+}
+
 /*responsive hasta 480px*/
 @media screen and (max-width: 480px) {
   /*nav*/
   nav {
+    display: flex;
     align-items: flex-end;
     position: absolute !important;
     flex-wrap: nowrap !important;
@@ -279,10 +365,11 @@ footer section div a img {
     padding: 0 5px 0 0;
     font-size: 20px;
   }
+  nav .navbar-toggler {
+    background-color: white;
+  }
   .titulo {
-    font-size: 1.5em;
-    margin-top: 0;
-    margin-left: 5px;
+    display: none;
   }
   /*header*/
   header {
@@ -384,6 +471,17 @@ footer section div a img {
   .destacadas figure button {
     margin-top: 32px;
   }
+  /*tasaciones*/
+  .main-tasaciones {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-tasaciones #formulario-tasaciones {
+    width: 100%;
+  }
+}
+/*responsive desde 480px hasta 1200px*/
+@media screen and (min-width: 480px) and (max-width: 1200px) {
   /*contacto*/
   #contacto {
     margin-top: 200px;
@@ -407,13 +505,38 @@ footer section div a img {
   #sueño {
     display: none;
   }
-  /*tasaciones*/
-  .main-tasaciones {
-    display: flex;
-    flex-direction: column;
+}
+/*responsive hasta 768px*/
+@media screen and (max-width: 768px) {
+  .btn-secondary {
+    background-color: rgb(0, 124, 128) !important;
+    border: none;
+    color: white;
+    font-size: 1.3em;
   }
-  .main-tasaciones #formulario-tasaciones {
-    width: 100%;
+  .navbar-toggler {
+    display: none;
+  }
+  .titulo {
+    display: none;
+  }
+  .dropdown-item {
+    color: rgb(0, 124, 128);
+    border-color: rgb(0, 124, 128);
+    font-size: 1.3em;
+  }
+  .body-error main {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  .body-error main .error1 {
+    display: none;
+  }
+}
+/*responsive a partir de 768px*/
+@media screen and (min-width: 768px) {
+  .btn-secondary {
+    display: none;
   }
 }
 * {

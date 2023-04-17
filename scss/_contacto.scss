@@ -32,6 +32,10 @@
         #boton-contacto{
             background-color: map-get($map: $paleta, $key:uno);
             color:map-get($map: $paleta, $key:dos);
+            &:hover{
+                cursor: pointer;
+            transform:scale(1.1);
+            }
         }
     }
 }

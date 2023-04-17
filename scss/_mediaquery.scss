@@ -5,6 +5,7 @@
 /*nav*/  
    
 nav{
+    display:flex;
     align-items: flex-end;
     position:absolute !important;
     flex-wrap: nowrap!important;
@@ -17,13 +18,14 @@ nav{
         padding:0 5px 0 0;
         font-size: 20px;
        }
+    .navbar-toggler{
+    background-color: map-get($map: $paleta, $key:dos);  
+    }
 
     }
      
 .titulo{
-    font-size: $textMs;
-    margin-top:0;
-    margin-left:5px;
+    display:none;
     }
 
 
@@ -160,6 +162,26 @@ nav{
             }
        }
 
+
+/*tasaciones*/
+   
+.main-tasaciones{
+    display:flex;
+    flex-direction: column;
+    #formulario-tasaciones{
+     width:100%;
+    }
+    }
+
+
+}
+
+
+
+/*responsive desde 480px hasta 1200px*/
+
+@media screen and (min-width:480px) and (max-width:1200px){
+
 /*contacto*/
    
 #contacto{
@@ -191,16 +213,60 @@ nav{
 #sueño{
     display:none;
     }
-   
-       
-/*tasaciones*/
-   
-.main-tasaciones{
-       display:flex;
-       flex-direction: column;
-       #formulario-tasaciones{
-        width:100%;
+}
+
+
+
+/*responsive hasta 768px*/
+
+@media screen and  (max-width:768px){
+
+
+
+.btn-secondary{
+    background-color:map-get($map: $paleta, $key:uno)!important;
+    border:none;
+    color:map-get($map: $paleta, $key:dos);
+    font-size: $text13;
+}
+
+.navbar-toggler{
+    display:none;
+}
+
+.titulo{
+    display:none;
+}
+
+.dropdown-item{
+    color:map-get($map: $paleta, $key:uno);
+    border-color:map-get($map: $paleta, $key:uno);
+    font-size: $text13;
+}
+
+.body-error{
+    main{
+        display: grid;
+        grid-template-columns: 100%;
+        .error1{
+            display: none;
+        }
     }
-   }
+}
+
+}
+
+
+
+
+
+
+/*responsive a partir de 768px*/
+
+@media screen and  (min-width:768px){
+
+.btn-secondary{
+    display: none;
+}
 
 }

@@ -5,7 +5,7 @@
 $paleta:(
     'uno':rgb(0, 124, 128),
     'dos': white,
-    'tres': rgb(75, 75, 75),
+    'tres': rgb(70, 70, 70),
     'cuatro':black,
     'cinco': rgb(212, 252, 252),
     'seis': rgb(3, 91, 94),
@@ -27,11 +27,34 @@ $paleta:(
     font-size: $textSm;
     }
 
+.boton-alquiler:hover{
+    cursor: pointer;
+    transform:scale(1.1);
+}
+
 .button-venta{
     @extend .boton-alquiler;
     background-color: map-get($map: $paleta, $key:dos);
     color: map-get($map: $paleta, $key:uno);
     }
+.button-venta:hover{
+    cursor: pointer;
+    transform:scale(1.1);
+}
+
+body{
+    main{
+        section{
+            figure{
+                button{
+                    @extend .boton-alquiler;
+                    background-color: map-get($map: $paleta, $key:cinco);
+                    color: map-get($map: $paleta, $key:uno);
+                }
+            }
+        }
+    }
+}
 
 
 //mixin
@@ -47,10 +70,14 @@ $paleta:(
 }
 
 #formulario-tasaciones{
-    @include textos (1.2em, map-get($map: $paleta, $key:dos), 1.5em);
+    @include textos (1.2em, map-get($map: $paleta, $key:tres), 1.5em);
     #boton-tasaciones{
         background-color: map-get($map: $paleta, $key:uno);
         border:solid;
+    }
+    #boton-tasaciones:hover{
+        cursor: pointer;
+        transform:scale(1.1);
     }
 
 }

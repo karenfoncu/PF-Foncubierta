@@ -9,6 +9,9 @@ body{
         color:map-get($map: $paleta, $key:dos);
         z-index:99;
         img{ 
+            animation-name: animateDiv;
+            animation-duration: 500ms;
+            animation-iteration-count: 1;
             display:flex;
             width: 100px;
             height: 100px;
@@ -26,6 +29,8 @@ body{
                 margin-left:10px;
                 }
                 a:hover{
+                    cursor: pointer;
+                    transform:scale(1.1);
                     color:map-get($map: $paleta, $key:siete);
                     text-decoration: underline;
                 }            
@@ -45,9 +50,7 @@ body{
     font-size: $text3;
     margin-top: 60px;  
 }
+
 .navbar-toggler{
     background-color: map-get($map: $paleta, $key:dos);
 }
-
-
-

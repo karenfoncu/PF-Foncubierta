@@ -26,6 +26,10 @@
             width:200px;
             margin-top:15px;
         }
+        img:hover{
+            cursor: pointer;
+            transform:scale(1.1);
+        }
         p{
             font-size:$textSm;
             line-height: 1.2rem;
