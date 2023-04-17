@@ -239,6 +239,7 @@ nav{
 }
 
 .dropdown-item{
+    margin-left:1em;
     color:map-get($map: $paleta, $key:uno);
     border-color:map-get($map: $paleta, $key:uno);
     font-size: $text13;

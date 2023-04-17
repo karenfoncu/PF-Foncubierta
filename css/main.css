@@ -521,6 +521,7 @@ footer section div a img {
     display: none;
   }
   .dropdown-item {
+    margin-left: 1em;
     color: rgb(0, 124, 128);
     border-color: rgb(0, 124, 128);
     font-size: 1.3em;
